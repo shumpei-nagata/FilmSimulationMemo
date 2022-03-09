@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E4A674F27D8BB8C00CD84A9 /* FilmSimulationMemoPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4A674E27D8BB8C00CD84A9 /* FilmSimulationMemoPackage */; };
+		5E87AD0627D8C9DE00DFFD55 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 5E87AD0527D8C9DE00DFFD55 /* Presentation */; };
 		5EC0C97227D8BAB0009C3BE5 /* FilmSimulationMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0C97127D8BAB0009C3BE5 /* FilmSimulationMemoApp.swift */; };
 		5EC0C97627D8BAB1009C3BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0C97527D8BAB1009C3BE5 /* Assets.xcassets */; };
 		5EC0C97927D8BAB1009C3BE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0C97827D8BAB1009C3BE5 /* Preview Assets.xcassets */; };
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4A674F27D8BB8C00CD84A9 /* FilmSimulationMemoPackage in Frameworks */,
+				5E87AD0627D8C9DE00DFFD55 /* Presentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +151,7 @@
 			);
 			name = FilmSimulationMemo;
 			packageProductDependencies = (
-				5E4A674E27D8BB8C00CD84A9 /* FilmSimulationMemoPackage */,
+				5E87AD0527D8C9DE00DFFD55 /* Presentation */,
 			);
 			productName = FilmSimulationMemo;
 			productReference = 5EC0C96E27D8BAB0009C3BE5 /* FilmSimulationMemo.app */;
@@ -590,9 +590,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5E4A674E27D8BB8C00CD84A9 /* FilmSimulationMemoPackage */ = {
+		5E87AD0527D8C9DE00DFFD55 /* Presentation */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FilmSimulationMemoPackage;
+			productName = Presentation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
