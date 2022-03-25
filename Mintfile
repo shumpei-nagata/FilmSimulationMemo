@@ -3,4 +3,5 @@ nicklockwood/SwiftFormat
 peripheryapp/periphery
 realm/SwiftLint
 SwiftGen/SwiftGen
+yonaskolb/XcodeGen
 uber/mockolo
