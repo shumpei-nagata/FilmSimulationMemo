@@ -25,22 +25,31 @@ let package = Package(
         .target(
             name: "Presentation",
             dependencies: [
-                "Domain"
+                "Domain",
+                "Common"
             ]
         ),
         .target(
             name: "Domain",
             dependencies: [
-                "DataStore"
+                "DataStore",
+                "Common"
             ]
         ),
-        .target(name: "DataStore"),
+        .target(
+            name: "DataStore",
+            dependencies: [
+                "Common"
+            ]
+        ),
+        .target(name: "Common"),
         .testTarget(
             name: "FilmSimulationMemoPackageTests",
             dependencies: [
                 "Presentation",
                 "Domain",
-                "DataStore"
+                "DataStore",
+                "Common"
             ]
         )
     ]
