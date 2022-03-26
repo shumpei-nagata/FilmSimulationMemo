@@ -12,7 +12,7 @@ gen:
 
 .PHONY: derived
 derived:
-	killall Xcode
+	-killall Xcode
 	rm -rf ~/Library/Developer/Xcode/DerivedData/${WORKSPACE_NAME}*
 	$(MAKE) gen
 	open ${WORKSPACE_NAME}.xcodeproj
