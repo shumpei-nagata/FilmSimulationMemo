@@ -5,7 +5,7 @@
 //  Created by Shumpei Nagata on 2022/03/25.
 //
 
-extension FilmSimulation.Base {
+public extension FilmSimulation.Base {
     var isFilterApplicable: Bool {
         switch self {
         case .acros, .monochrome:

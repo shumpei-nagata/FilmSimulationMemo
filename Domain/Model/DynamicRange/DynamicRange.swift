@@ -5,7 +5,7 @@
 //  Created by Shumpei Nagata on 2022/03/25.
 //
 
-enum DynamicRange: Int, CaseIterable {
+public enum DynamicRange: Int, CaseIterable {
     case auto
     case dr100
     case dr200
@@ -27,11 +27,11 @@ enum DynamicRange: Int, CaseIterable {
         }
     }
 
-    var name: String {
+    public var name: String {
         dynamicRange.map { "DR\($0)" } ?? "AUTO"
     }
 
-    var description: String {
+    public var description: String {
         dynamicRange.map { "\($0)%" } ?? "AUTO"
     }
 }
