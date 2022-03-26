@@ -6,22 +6,32 @@
 //
 
 enum DynamicRange: Int, CaseIterable {
-    case auto = -1
-    case dr100 = 100
-    case dr200 = 200
-    case dr400 = 400
+    case auto
+    case dr100
+    case dr200
+    case dr400
+    
+    private var dynamicRange: Int? {
+        switch self {
+        case .auto:
+            return nil
+            
+        case .dr100:
+            return 100
+            
+        case .dr200:
+            return 200
+            
+        case .dr400:
+            return 400
+        }
+    }
     
     var name: String {
-        guard self != .auto else {
-            return "AUTO"
-        }
-        return "DR\(rawValue)"
+        dynamicRange.map { "DR\($0)" } ?? "AUTO"
     }
     
     var description: String {
-        guard self != .auto else {
-            return "AUTO"
-        }
-        return "\(rawValue)%"
+        dynamicRange.map { "\($0)%" } ?? "AUTO"
     }
 }

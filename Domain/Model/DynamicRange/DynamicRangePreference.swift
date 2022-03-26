@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DynamicRangePreference: CaseIterable {
+enum DynamicRangePreference: Int, CaseIterable {
     case auto
     case strong
     case `weak`

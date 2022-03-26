@@ -6,7 +6,7 @@
 //
 
 public struct FilmSimulation {
-    public enum Base: CaseIterable {
+    public enum Base: Int, CaseIterable {
         case provia
         case velvia
         case astia
@@ -22,7 +22,7 @@ public struct FilmSimulation {
         case sepia
     }
     
-    public enum Filter: CaseIterable {
+    public enum Filter: Int, CaseIterable {
         case standard
         case yellow
         case red
