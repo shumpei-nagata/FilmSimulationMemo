@@ -1,6 +1,6 @@
 //
 //  FilmSimulation.swift
-//  
+//
 //
 //  Created by Shumpei Nagata on 2022/03/25.
 //
@@ -21,7 +21,7 @@ public struct FilmSimulation {
         case monochrome
         case sepia
     }
-    
+
     public enum Filter: Int, CaseIterable {
         case standard
         case yellow

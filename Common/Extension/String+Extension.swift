@@ -1,6 +1,6 @@
 //
 //  String+Extension.swift
-//  
+//
 //
 //  Created by Shumpei Nagata on 2022/03/25.
 //

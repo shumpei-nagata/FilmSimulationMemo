@@ -36,6 +36,15 @@ targets:
             - target: Domain
             - target: DataStore
             - target: Common
+        preBuildScripts:
+            - script: |
+                # Apple Silicon MacでHomebrewのPATHが通っていなければ通す
+                if [ -d /opt/homebrew/bin ] && ! type brew > /dev/null 2>&1 ; then
+                    export PATH="$PATH:/opt/homebrew/bin"
+                fi
+                xcrun --sdk macosx mint run swiftlint --fix --format
+                xcrun --sdk macosx mint run swiftlint
+              name: SwiftLint
 
     Presentation:
         type: framework
