@@ -14,7 +14,7 @@ struct FilmSimulationListView: View {
             List(FilmSimulation.Base.allCases, id: \.self) { base in
                 if base.isFilterApplicable {
                     NavigationLink {
-                        Text(base.name)
+                        FilmSimulationFilterListView(base: base)
                     } label: {
                         Text(base.name)
                     }
@@ -22,6 +22,7 @@ struct FilmSimulationListView: View {
                     Text(base.name)
                 }
             }
+            .navigationTitle("Film Simulation")
         }
     }
 }
