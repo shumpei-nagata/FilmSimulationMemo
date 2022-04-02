@@ -1,5 +1,10 @@
 name: FilmSimulationMemo
 
+packages:
+    swift-composable-architecture:
+        url: https://github.com/pointfreeco/swift-composable-architecture
+        from: 0.34.0
+
 options:
     deploymentTarget:
         iOS: 15.0
@@ -97,6 +102,9 @@ targets:
                     PRODUCT_BUNDLE_IDENTIFIER: com.shumpei.nagata.FilmSimulationMemo.dev.Common
                 Release:
                     PRODUCT_BUNDLE_IDENTIFIER: com.shumpei.nagata.FilmSimulationMemo.Common
+        dependencies:
+            - package: swift-composable-architecture
+              product: ComposableArchitecture
 
 schemes:
     FilmSimulationMemo-Debug:
